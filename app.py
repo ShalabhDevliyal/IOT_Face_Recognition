@@ -18,7 +18,7 @@ def indentify():
             roi_gray = gray[y:y+h, x:x+w] 
             roi_color = frame[y:y+h, x:x+w]
 
-            cv2.imwrite(f'face_{i+1}.png',frame)
+            cv2.imwrite(f'face_{i+1}.png',roi_color)
 
             eyes = eye_cascade.detectMultiScale(roi_gray)
             for( ex, ey, ew, eh) in eyes:

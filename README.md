@@ -12,4 +12,4 @@ The problem statement for the flow chart is:
 What have we achieved?
 30-11-2023 => Through the pre-trained haarcascade file we are able to detect face and eyes in the face
 01-12-2023 => Through the imwrite function saving the frame with the detected face
-Task : @Get a cropped image of the face only 
+Task : @Get a cropped image of the face only : Done
