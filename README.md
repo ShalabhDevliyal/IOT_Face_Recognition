@@ -13,3 +13,5 @@ What have we achieved?
 30-11-2023 => Through the pre-trained haarcascade file we are able to detect face and eyes in the face
 01-12-2023 => Through the imwrite function saving the frame with the detected face
 Task : @Get a cropped image of the face only : Done
+02-12-2023 => Added the folder which will contain the detected faces
+Task : @Recognize the face added to the folder and delete once detected and indentified.

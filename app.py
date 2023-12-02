@@ -1,10 +1,14 @@
 import cv2
+import os
 
 def indentify():
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
     capture = cv2.VideoCapture(0)
+
+    output_folder = "D:\IOT_Face_Recognition\Images"
+    os.makedirs(output_folder, exist_ok=True)
 
     while True:
         ret, frame = capture.read()
@@ -18,7 +22,8 @@ def indentify():
             roi_gray = gray[y:y+h, x:x+w] 
             roi_color = frame[y:y+h, x:x+w]
 
-            cv2.imwrite(f'face_{i+1}.png',roi_color)
+            face_filename = os.path.join(output_folder, f'face_{i+1}.png')
+            cv2.imwrite(face_filename, roi_color)
 
             eyes = eye_cascade.detectMultiScale(roi_gray)
             for( ex, ey, ew, eh) in eyes:
