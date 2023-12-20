@@ -7,7 +7,7 @@ def indentify():
 
     capture = cv2.VideoCapture(0)
 
-    output_folder = "D:\IOT_Face_Recognition\Images"
+    output_folder = "D:/IOT_Face_Recognition/Unknown"
     os.makedirs(output_folder, exist_ok=True)
 
     while True:
