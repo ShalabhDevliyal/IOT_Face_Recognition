@@ -78,7 +78,7 @@ def identify_faces(image_path, image_base64_data):
             cropped_faces.append(roi_color)
     return cropped_faces
 
-def get_b64_test_image_for_virat():
+def get_b64_test_image_for_Ayush():
     with open("b64.txt") as f:
         return f.read()
 
@@ -87,5 +87,5 @@ def class_number_to_name(num):
 
 if __name__ == "__main__":
     load_save_artifacts()
-    # print(classify_image(get_b64_test_image_for_virat(), None))
-    print(classify_image(None, "D:\IOT_Face_Recognition\dataset\cropped\Maria Sharapova\Maria Sharapova4.png"))
+    # print(classify_image(get_b64_test_image_for_Ayush(), None))
+    print(classify_image(None, "D:/IOT_Face_Recognition/Unknown/face_1.png"))
